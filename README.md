@@ -1,10 +1,14 @@
 # FooBarQix Extended
 
-A PHP kata implementation of the FooBarQix transformation rules with layered services, validation, and tests.
+A PHP kata implementation of extended FooBarQix transformation rules with layered services, validation, and tests.
 
-## Overview
+## Learning Goal
 
-A PHP kata implementation of the FooBarQix transformation rules with layered services, validation, and tests.
+Practice taking a kata beyond a single file by separating input validation, transformation rules, controllers, services, and tests.
+
+## Context
+
+This kata is based on the extended FooBarQix exercise from the Craft Your Skills material. The step files in this repo document the progression through the exercise.
 
 ## Features
 
@@ -20,6 +24,14 @@ A PHP kata implementation of the FooBarQix transformation rules with layered ser
 - PHPUnit
 - Object-oriented design
 
+## Run
+
+```bash
+composer install
+vendor/bin/phpunit
+php public/index.php
+```
+
 ## Project Structure
 
 - `app/Services/` - transformation services
@@ -27,27 +39,8 @@ A PHP kata implementation of the FooBarQix transformation rules with layered ser
 - `app/Controllers/` - application flow
 - `tests/` - unit tests
 - `step_*.md` - kata progression notes
+- `coverage.png` - test coverage screenshot
 
-## Getting Started
+## License
 
-Install dependencies and run tests:
-
-```bash
-composer install
-vendor/bin/phpunit
-```
-
-Run the public entry point:
-
-```bash
-php public/index.php
-```
-
-## Portfolio Notes
-
-- Shows decomposition of a kata into services, validators, and tests.
-- Good example of building beyond a single-file exercise.
-
-## Status
-
-Portfolio-ready PHP kata.
+MIT License. See [LICENSE](./LICENSE). The kata prompt belongs to its original authors.
